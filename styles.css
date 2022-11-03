@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    border-radius: 19px;
+    position: sticky;
+
+    background-color: salmon;
+    padding: 5px;
+    margin: 2px;
+}
+
+a { 
+    text-decoration: none; color:blue; 
+}
+
+.button { 
+    border-radius: 19px; /* button code stolen from w3 schools lmao lol*/
+    background-color: #6082B6; 
+    border: none;
+    color: black;
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
