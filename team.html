@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hautamäki Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="bodi">
+    
+    <nav> <!-- Navigation Bar  -->
+        
+        <button class="button" onclick="window.location.href = 'index.html'" >Hautamäki Lab</button>
+
+        <button class="button" onclick="window.location.href = 'code.html'" style="float:right">Code</button>
+
+        <button class="button" onclick="window.location.href = 'data.html'" style="float:right">Data</button>
+
+        <button class="button" onclick="window.location.href = 'publications.html'" style="float:right">Publications</button>
+
+        <button class="button" onclick="window.location.href = 'team.html'" style="float:right">Team</button>
+    </nav>
+
+    <div class="main"> <!-- Main body -->
+        <h1>
+            Team Members
+        </h1>
+
+        <div class="people">
+
+            <div class="person">
+                <img src="https://cs.uef.fi/~villeh/ville.jpg" alt="Head Shot of Ville">
+                <br>
+                <span class="name">
+                    Ville Hautamäki
+                </span>
+                <br>
+                <span class="occupation">
+                    Senior Researcher
+                </span>
+                <div>
+                    <a href="https://github.com/villeh1" style="color: #000000;">
+                        <i class="fa fa-github" style="color: 'black'"></i></a>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+        
+    <div>
+        <a href="#" onclick="switchtheme()" id="bruh" style="color: black; background-color: lightgray; border-radius: 5px;">light theme</a>
+    </div>
+</body>
+</html>
+<script>
+    let theme = 0; // 0 = dark
+
+    function switchtheme() {
+        if(theme == 0) {
+            theme++;
+            document.getElementById("bodi").style.backgroundColor = "white";
+            document.getElementById("bodi").style.color = "black";
+
+            document.getElementById("bruh").innerText = "dark theme";
+            document.getElementById("bruh").style.color = "black";
+        } else {
+            theme = 0;
+            document.getElementById("bodi").style.backgroundColor = "black";
+            document.getElementById("bodi").style.color = "white";
+
+            document.getElementById("bruh").innerText = "light theme";
+            document.getElementById("bruh").style.color = "black";
+        }
+    }
+</script>
