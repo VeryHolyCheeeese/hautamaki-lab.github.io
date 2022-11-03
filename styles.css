@@ -29,9 +29,9 @@ a {
   }
 
 .person {
-    position: absolute;
+    position: relative;
 
-    
+    width: fit-content;
 
     background-color: gray;
 
